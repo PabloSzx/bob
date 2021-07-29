@@ -103,7 +103,7 @@ async function buildSingle() {
 
   const commonOutputOptions = {
     preferConst: true,
-    sourcemap: true,
+    sourcemap: false,
   };
 
   const generates = [
@@ -200,7 +200,7 @@ async function build(
 
   const commonOutputOptions = {
     preferConst: true,
-    sourcemap: true,
+    sourcemap: false,
   };
 
   const generates = [
