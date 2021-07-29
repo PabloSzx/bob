@@ -21,6 +21,7 @@
     "README.md"
   ],
   "dependencies": {
+    "@pnpm/exportable-manifest": "2.1.5",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "7.1.1",
     "@vercel/ncc": "0.28.3",

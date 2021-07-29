@@ -10,7 +10,8 @@ import fs from "fs-extra";
 import { resolve, join, dirname } from "path";
 import { Consola } from "consola";
 import get from "lodash.get";
-import mkdirp from 'mkdirp';
+import mkdirp from "mkdirp";
+import makePublishManifest from "@pnpm/exportable-manifest";
 
 import { createCommand } from "../command";
 import { BobConfig } from "../config";
@@ -199,7 +200,7 @@ async function build(
         packageJSONPath: packagePath,
       }),
       generatePackageJson({
-        baseContents: rewritePackageJson(pkg, distPath),
+        baseContents: await makePublishManifest(cwd, rewritePackageJson(pkg, distPath)),
         additionalDependencies: Object.keys(pkg.dependencies || {}),
       }),
     ],
