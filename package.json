@@ -1,5 +1,5 @@
 {
-  "name": "bob-the-bundler",
+  "name": "@pablosz/bob-the-bundler",
   "version": "1.2.1",
   "description": "Bob The Bundler!",
   "author": {
@@ -21,6 +21,7 @@
     "README.md"
   ],
   "dependencies": {
+    "@pnpm/exportable-manifest": "^2.1.5",
     "@rollup/plugin-node-resolve": "7.1.1",
     "builtins": "4.0.0",
     "consola": "2.11.3",
