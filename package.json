@@ -1,6 +1,6 @@
 {
-  "name": "bob-the-bundler",
-  "version": "1.4.1",
+  "name": "@pablosz/bob-the-bundler",
+  "version": "1.4.2",
   "description": "Bob The Bundler!",
   "author": {
     "email": "kamil.kisiela@gmail.com",
@@ -21,6 +21,7 @@
     "README.md"
   ],
   "dependencies": {
+    "@pnpm/exportable-manifest": "^2.1.5",
     "@rollup/plugin-node-resolve": "7.1.1",
     "@vercel/ncc": "0.28.3",
     "builtins": "4.0.0",
